@@ -38,7 +38,7 @@ public class TestesGUI {
     public static void main(String[] args) {
         // TODO code application logic here
         
-        JFrame frame = new JFrame("Bola a saltar");
+        JFrame frame = new JFrame("Sol com gradiente e detalhes");
         PainelTestes painel = new PainelTestes();
         
         frame.setSize(larguraDimensaoDaTela()/2, alturaDimensaoDaTela()/2);
