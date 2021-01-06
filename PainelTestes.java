@@ -32,48 +32,45 @@ public class PainelTestes extends JPanel implements Runnable  {
        
        // Anti-Aliasing
        g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
-       
-       atf= g2d.getTransform();
        g2d.setPaint(new GradientPaint(0,0, Color.YELLOW,61,63, Color.RED,true));
        g2d.fill(new Ellipse2D.Double(270, 120, 100, 100));
+      
+       // Detalhes da linha amarela
+       atf= g2d.getTransform(); 
        
-       g2d.setStroke(new BasicStroke(10));
        g2d.rotate(40,410,110);
        g2d.setPaint(Color.orange);
        g2d.fillRoundRect(415,120, 30, 10,7,7);
         
-       g2d.setStroke(new BasicStroke(10));
        g2d.setPaint(Color.ORANGE);
        g2d.fillRoundRect(375,120, 30, 10,7,7);
-        
-       g2d.setStroke(new BasicStroke(10));
        
        g2d.setPaint(Color.ORANGE);
        g2d.fillRoundRect(335,120, 30, 10,7,7);
        
        g2d.setTransform(atf);
        
-       // Outros
-       atf = new AffineTransform();
-       g2d.setStroke(new BasicStroke(10));
        g2d.rotate(40,410,90);
        g2d.setPaint(new GradientPaint(0,0, Color.YELLOW,50,63, Color.RED,true));
-       g2d.fillRoundRect(430,120, 30, 10,7,7);
+       g2d.fillRoundRect(430,130, 30, 10,7,7);
         
-       
-       g2d.setStroke(new BasicStroke(10));
-       g2d.rotate(40,410,90);
        g2d.setPaint(new GradientPaint(0,0, Color.YELLOW,50,63, Color.RED,true));
-       g2d.fillRoundRect(430,120, 30, 10,7,7);
+       g2d.fillRoundRect(390,130, 30, 10,7,7);
        
-       /*g2d.setStroke(new BasicStroke(10));
-       g2d.setPaint(Color.ORANGE);
-       g2d.fillRoundRect(375,120, 30, 10,7,7);*/
+       g2d.setTransform(atf);
        
+       g2d.setPaint(new GradientPaint(0,0, Color.YELLOW,50,63, Color.RED,true));
+       g2d.fillRoundRect(405,155, 30, 10,7,7);
        
+       g2d.setPaint(new GradientPaint(0,0, Color.YELLOW,50,70, Color.RED,true));
+       g2d.fillRoundRect(445,155, 30, 10,7,7);
+        
+       g2d.setPaint(new GradientPaint(0,50, Color.red,40,55, Color.YELLOW,true));
+       g2d.fillRoundRect(485,155, 30, 10,7,7);
+
+       g2d.setTransform(atf);
        
-        /*
-        for(int i=0; i<6; i++)
+       /* for(int i=0; i<6; i++)
        {
            g2d.setPaint(new Color(255,255,255));
            g2d.fillRect(getxPosition(), 305, 80, 10);
