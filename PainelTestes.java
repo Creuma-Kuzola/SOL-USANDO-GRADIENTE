@@ -50,6 +50,7 @@ public class PainelTestes extends JPanel implements Runnable  {
        
        g2d.setTransform(atf);
        
+       // Detalhes da linha antes da Linha amarela
        g2d.rotate(40,410,90);
        g2d.setPaint(new GradientPaint(0,0, Color.YELLOW,50,63, Color.RED,true));
        g2d.fillRoundRect(430,130, 30, 10,7,7);
@@ -59,6 +60,7 @@ public class PainelTestes extends JPanel implements Runnable  {
        
        g2d.setTransform(atf);
        
+       //Detalhes da linha depois da linha amarela
        g2d.setPaint(new GradientPaint(0,0, Color.YELLOW,50,63, Color.RED,true));
        g2d.fillRoundRect(405,155, 30, 10,7,7);
        
@@ -70,16 +72,18 @@ public class PainelTestes extends JPanel implements Runnable  {
 
        g2d.setTransform(atf);
        
-       /* for(int i=0; i<6; i++)
-       {
-           g2d.setPaint(new Color(255,255,255));
-           g2d.fillRect(getxPosition(), 305, 80, 10);
-           setxPosition(getxPosition()+110);
-           if(i==5){
-             //  setxPosition(20);
-           }
-       }    
-        */
+       g2d.rotate(55,305,105);
+       g2d.setPaint(Color.RED);
+       g2d.fillRoundRect(345,105, 30, 10,7,7);
+       
+       g2d.setPaint(Color.RED);
+       //g2d.setPaint(Color.BLACK);
+       g2d.fillRoundRect(305,105, 30, 10,7,7);
+       
+       g2d.setTransform(atf);
+
+     
+    
     }
 
     
