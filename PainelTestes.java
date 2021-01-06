@@ -67,8 +67,11 @@ public class PainelTestes extends JPanel implements Runnable  {
        g2d.setPaint(new GradientPaint(0,0, Color.YELLOW,50,70, Color.RED,true));
        g2d.fillRoundRect(445,155, 30, 10,7,7);
         
-       g2d.setPaint(new GradientPaint(0,50, Color.red,40,55, Color.YELLOW,true));
+       g2d.setPaint(new GradientPaint(0,50, Color.red,50,50, Color.YELLOW,true));
        g2d.fillRoundRect(485,155, 30, 10,7,7);
+       
+       g2d.setPaint(new GradientPaint(50,55, Color.YELLOW,40,60, Color.RED,true));
+       g2d.fillRoundRect(525,155, 30, 10,7,7);
 
        g2d.setTransform(atf);
        
@@ -81,9 +84,42 @@ public class PainelTestes extends JPanel implements Runnable  {
        g2d.fillRoundRect(305,105, 30, 10,7,7);
        
        g2d.setTransform(atf);
+       
+       g2d.setPaint(new GradientPaint(0,0, Color.YELLOW,50,63, Color.RED,true));
+       g2d.fillRoundRect(405,155, 30, 10,7,7);
+       
+       g2d.setPaint(new GradientPaint(0,0, Color.YELLOW,50,70, Color.RED,true));
+       g2d.fillRoundRect(445,155, 30, 10,7,7);
+        
+       
+       g2d.fillRoundRect(485,155, 30, 10,7,7);
 
-     
-    
+       g2d.setTransform(atf);
+       
+       g2d.rotate(60,405,220);
+       g2d.setPaint(new GradientPaint(0,0, Color.YELLOW,50,63, Color.RED,true));
+       g2d.fillRoundRect(395,220, 30, 10,7,7);
+       
+       g2d.setPaint(new GradientPaint(0,0, Color.YELLOW,50,70, Color.RED,true));
+       g2d.fillRoundRect(355,220, 30, 10,7,7);
+       
+       g2d.setPaint(new GradientPaint(0,50, Color.red,40,55, Color.YELLOW,true));
+       g2d.fillRoundRect(315,220, 30, 10,7,7);
+
+       g2d.setTransform(atf); 
+       
+       g2d.rotate(60,405,220);
+       g2d.setPaint(new GradientPaint(0,0, Color.YELLOW,50,63, Color.RED,true));
+       g2d.fillRoundRect(395,220, 30, 10,7,7);
+       
+       g2d.setPaint(new GradientPaint(0,0, Color.YELLOW,50,70, Color.RED,true));
+       g2d.fillRoundRect(355,220, 30, 10,7,7);
+       
+       g2d.setPaint(new GradientPaint(0,50, Color.red,40,55, Color.YELLOW,true));
+       g2d.fillRoundRect(315,220, 30, 10,7,7);
+
+       g2d.setTransform(atf); 
+       
     }
 
     
