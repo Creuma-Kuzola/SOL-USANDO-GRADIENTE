@@ -120,6 +120,18 @@ public class PainelTestes extends JPanel implements Runnable  {
 
        g2d.setTransform(atf); 
        
+       g2d.rotate(70,360,220);
+       g2d.setPaint(new GradientPaint(0,0, Color.YELLOW,50,63, Color.RED,true));
+       g2d.fillRoundRect(360,220, 30, 10,7,7);
+       
+       g2d.setPaint(new GradientPaint(0,0, Color.YELLOW,50,70, Color.RED,true));
+       g2d.fillRoundRect(400,220, 30, 10,7,7);
+       
+       g2d.setPaint(new GradientPaint(0,50, Color.red,40,55, Color.YELLOW,true));
+       g2d.fillRoundRect(440,220, 30, 10,7,7);
+
+       g2d.setTransform(atf); 
+       
     }
 
     
